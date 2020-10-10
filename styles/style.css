@@ -27,11 +27,14 @@
   padding: 0;
   display: flex;
   align-self: center;
-  width: 730px;
+  max-width: 730px;
+  width:100%;
+  box-sizing: border-box;
   margin: 0 0 0 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bolder;
+  z-index: 2;
 }
 
 .header__subtitle {
@@ -43,7 +46,7 @@
   position: absolute;
   bottom: 30px;
   left: 64px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__link {
@@ -172,6 +175,7 @@
 
 .feynman {
   min-height: 790px;
+  padding-top: 100px;
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
   background-repeat: no-repeat;
@@ -180,8 +184,9 @@
 }
 
 .feynman__title {
-  margin: auto;
-  width: 648px;
+  margin: 0 auto;
+  max-width: 648px;
+  width:100%;
   line-height: 1.15;
   font-size: 120px;
   font-weight: bolder;
@@ -213,19 +218,31 @@
   flex-direction: column;
   align-items: center;
   background-color: #1f1f1f;
-  color: white;
   padding: 90px 0;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
 }
 
+.section-title_theme_dark {
+  color: white;
+  z-index: 2;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+  z-index: 2;
+}
+
 .table__cell_theme_dark {
+  color: white;
   width: 200px;
-  margin-top: 80px;
+  margin: 80px 0 0;
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
   width: 877px;
   height: 877px;
   position: absolute;
@@ -240,21 +257,35 @@
   display: flex;
   justify-content: center;
   min-height: 350px;
+  box-sizing: border-box;
 }
 
 .footer__columns {
+  width: 90%;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-basis: 711px;
   justify-content: space-between;
   color: white;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+}
+
+.logo_place_footer {
+  width: 183px;
+  height: 32px;
 }
 
 .footer__column {
   list-style: none;
   margin: 0 0 16px;
   padding: 0;
+}
+
+.footer__column_content_info {
+  margin: 0;
 }
 
 .footer__column_content_copyright {
@@ -272,6 +303,12 @@
 }
 
 .footer__column-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__column-link {
   text-decoration: none;
   color: white;
   line-height: 30px;
@@ -284,6 +321,10 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: bolder;
+}
+
+.footer__column_social {
+  margin: 0;
 }
 
 .footer__social-icon {
