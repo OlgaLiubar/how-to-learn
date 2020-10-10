@@ -269,10 +269,6 @@
   color: white;
 }
 
-.footer__column_content_copyright {
-  flex-basis: 711px;
-}
-
 .logo_place_footer {
   width: 183px;
   height: 32px;
@@ -284,15 +280,16 @@
   padding: 0;
 }
 
-.footer__column_content_info {
-  margin: 0;
-}
-
 .footer__column_content_copyright {
   margin: 0;
   display: flex;
+  flex-basis: 711px;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.footer__column_content_info {
+  margin: 0;
 }
 
 .footer__author {
