@@ -6,5 +6,5 @@
 
 .header__link:hover {
   opacity: 0.6; /* Значение прозрачности */
-  filter: alpha(Opacity=70); /* Прозрачность в IE */
+  filter: alpha(opacity=70); /* Прозрачность в IE */
 }
